@@ -1,0 +1,26 @@
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-wrapper .input {
+    width: 30%;
+    height: 40px;
+    font-size: 17px;
+    padding: 5px 14px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all .3s ease;
+    outline: none;
+}
+
+.search-wrapper .input:is(:active, :focus-within) {
+    border-color: royalblue;
+}
+
+.search-wrapper .input::placeholder {
+    font-size: 17px;
+    color: black;
+
+}
